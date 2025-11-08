@@ -1,5 +1,4 @@
 "use strict";
-
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".navLinks");
     links.forEach(link => link.addEventListener("click", clickLink));
