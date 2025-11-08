@@ -8,7 +8,9 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "es6",
-    "target": "es6",
+    "target": "es6",  
+   
+
     //"types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -38,6 +40,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  },
-  "include": ["Scripts/ts/**/*.ts", "Scripts/ts/renderHome.ts"]
+  }
+   
 }
