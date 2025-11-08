@@ -8,16 +8,58 @@
 </head>
 <body>
     <nav>
-     <a>About</a>
-     <a>Contact</a>
+    <a class="navLinks selected" id="home">Home</a>
+    <a class="navLinks" id="about">About</a>
+    <a class="navLinks" id="contact">Contact</a>
     </nav>
+
     <main>
-   <div id="intro">
-    <h1>Hello</h1>
+   <div id="content">
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt tortor ut tincidunt ullamcorper. Donec vitae fringilla quam, quis ullamcorper nunc. 
+        Maecenas condimentum est interdum, molestie nunc nec, efficitur orci. In hac habitasse platea dictumst. Etiam fermentum odio interdum erat ultrices molestie.</p>
+       <div class="pictureDiv">
+            <div class="imageBlock">
+                <img src="../Images/example.png">
+                <p>Info here</p>
+            </div>
+
+             <div class="imageBlock">
+                <img src="../Images/example.png">
+                <p>Info here</p>
+            </div>
+            <div class="imageBlock">
+                <img src="../Images/example.png">
+                <p>Info here</p>
+            </div>
+        </div>
+
+        <div class="formDiv">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Your email adress</label>
+                <input type="email" id="email" required>
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" required rows="4" cols="50"></textarea>
+                <button id="btnSend" type="submit">Send</button>
+            </form>
+
+
+        </div>
+
+
+      </div>
+ 
+
     </main>
 
 
-   </div>
+ 
+   <footer>
+    <a id="githubLogo" href="https://github.com/hellgrenm"> <img src="../Images/github.png" id="githubPic" alt="github logo"> </a>
+   </footer>
    
+   <script type="module"  src="../Scripts/ts/script.js" ></script>
 </body>
 </html>
