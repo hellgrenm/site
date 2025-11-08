@@ -1,0 +1,64 @@
+export function renderContact(){
+
+    const contentDiv = document.getElementById("content") as HTMLDivElement;
+    contentDiv.innerHTML = "";
+
+    const h1 = document.createElement("h1");
+    h1.textContent = "Contact me"
+    contentDiv.appendChild(h1);
+
+    const pInfoContact = document.createElement("p");
+    pInfoContact.textContent = "Nam facilisis vestibulum ipsum non consequat. Suspendisse pulvinar, lacus ut consectetur posuere, nisl odio posuere nunc, dignissim tempor leo felis ut lorem.";
+    contentDiv.appendChild(pInfoContact);
+
+    const formDiv = document.createElement("div");
+    formDiv.classList.add("formDiv");
+
+    const formTag = document.createElement("form");
+
+    const labelName = document.createElement("label");
+    labelName.htmlFor = "name";
+    labelName.textContent ="Name:";
+
+    const textInput = document.createElement("input");
+    textInput.type = "text";
+    textInput.id = "name";
+    textInput.required = true;
+    
+    formTag.appendChild(labelName);
+    formTag.appendChild(textInput);
+
+    const emailLabel = document.createElement("label");
+    emailLabel.htmlFor = "email";
+    emailLabel.textContent ="Your email adress:";
+
+    const emailInput = document.createElement("input");
+    emailInput.type = "email";
+    emailInput.id = "email";
+    emailInput.required = true;
+
+    formTag.appendChild(emailLabel);
+    formTag.appendChild(emailInput);
+
+    const messageLabel = document.createElement("label");
+    messageLabel.htmlFor="message";
+    messageLabel.textContent ="Your message";
+
+    const messageTextArea = document.createElement("textarea");
+    messageTextArea.setAttribute("rows", "4");
+    messageTextArea.setAttribute("cols", "50");
+    messageTextArea.required = true;
+
+    const sendButton = document.createElement("button");
+    sendButton.id ="btnSend";
+    sendButton.type = "submit";
+    sendButton.textContent="Send"
+
+    formTag.appendChild(messageLabel);
+    formTag.appendChild(messageTextArea);
+    formTag.appendChild(sendButton);
+
+    formDiv.appendChild(formTag);
+    contentDiv.appendChild(formDiv);
+    
+}
