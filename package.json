@@ -2,5 +2,10 @@
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "scripts": {
+  "build": "tsc",
+  "deploy": "gh-pages -d dist"
 }
+}
+
