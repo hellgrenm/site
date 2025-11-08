@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Sixtyfour&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
 body{
-    font-family: "TASA Orbiter", sans-serif;
-
+  font-family: "TASA Orbiter", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fefefe;

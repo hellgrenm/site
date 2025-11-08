@@ -2,6 +2,8 @@
 document.addEventListener("DOMContentLoaded", function(){
     const links = document.querySelectorAll<HTMLAnchorElement>(".navLinks");
     links.forEach(link => link.addEventListener("click", clickLink));
+    const hangmanPic = document.getElementById("hangmanPic") as HTMLImageElement;
+    
 });
 
 
@@ -48,19 +50,37 @@ function renderHome() {
   const pictureDiv = document.createElement("div");
   pictureDiv.classList.add("pictureDiv");
 
-    for (let i = 0; i < 3; i++){
-
+  
     const imageBlock = document.createElement("div");
+    const link = document.createElement("a");
+    link.href="hangman.html";
+    imageBlock.classList.add("imageBlock");
+    const image = document.createElement("img");
+    image.src = "images/hangman.png";
+    const pInfo = document.createElement("p");
+    pInfo.textContent = "Play hangman";
+    link.appendChild(image);
+    imageBlock.appendChild(link);
+    imageBlock.appendChild(pInfo);
+    pictureDiv.appendChild(imageBlock);
+    contentDiv.appendChild(pictureDiv);
+
+    for (let i = 0; i < 2; i++){
+    const imageBlock = document.createElement("div");
+    const link = document.createElement("a");
+    link.href="";
     imageBlock.classList.add("imageBlock");
     const image = document.createElement("img");
     image.src = "images/example.png";
     const pInfo = document.createElement("p");
-    pInfo.textContent = "Info here";
-    imageBlock.appendChild(image);
+    pInfo.textContent = "Coming soon";
+    link.appendChild(image);
+    imageBlock.appendChild(link);
     imageBlock.appendChild(pInfo);
     pictureDiv.appendChild(imageBlock);
-    }
     contentDiv.appendChild(pictureDiv);
+    }
+
  
 }
 
