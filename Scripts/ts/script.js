@@ -1,6 +1,7 @@
 import { renderHome } from "./renderHome.js";
 import { renderAbout } from "./renderAbout.js";
 import { renderContact } from "./renderContact.js";
+
 document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".navLinks");
     links.forEach(link => link.addEventListener("click", clickLink));
