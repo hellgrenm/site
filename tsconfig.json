@@ -1,23 +1,12 @@
 {
-
+  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-
-    "module": "none",
-    "target": "es6",  
-
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "rootDir": "scripts",
-    "outDir": "dist",
-    
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "es2015",
     "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": false,
-    "noUncheckedSideEffectImports": true,
-    "skipLibCheck": true,
-    
-  },
-  "include": ["scripts/*.ts"]
-   
+    "target": "ES2015",
+      "moduleResolution": "node",
+    "esModuleInterop": true
+  }
 }
