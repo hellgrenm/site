@@ -11,10 +11,21 @@
     <a href="index.html" class="navLinks" id="back">Go back</a>
     </nav>
     <main>
-        <h1>NOT YET IMPLEMENTED, COMING SOON</h1>
+        <div id="introText">
+         <h1>
+            <span id="gameText"></span>
+            <div id="cursor"></div>
+         </h1>
+        
 
+        </div>
+  
         <div class="gameBoard">
-            <img src="images/hangman7.png">
+            <img id="gamePicture" src="images/hangman7.png">
+            
+            <div class="letters">
+                
+            </div>
         </div>
     </main>
 
@@ -22,5 +33,5 @@
    <footer>
     <a id="githubLogo" href="https://github.com/hellgrenm"> <img src="images/github.png" id="githubPic" alt="github logo"> </a>
    </footer>
-   <script src="dist/hangmanScript.js"></script>
+   <script type="module" src="dist/hangmanScript.js"></script>
 </body>

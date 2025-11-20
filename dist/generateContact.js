@@ -5,11 +5,13 @@ export function renderContact() {
     h1.textContent = "Contact me";
     contentDiv.appendChild(h1);
     const pInfoContact = document.createElement("p");
-    pInfoContact.textContent = "Nam facilisis vestibulum ipsum non consequat. Suspendisse pulvinar, lacus ut consectetur posuere, nisl odio posuere nunc, dignissim tempor leo felis ut lorem.";
+    pInfoContact.textContent = "If you want to send me a message, use the form below or email me at myrton0@gmail.com";
     contentDiv.appendChild(pInfoContact);
     const formDiv = document.createElement("div");
     formDiv.classList.add("formDiv");
     const formTag = document.createElement("form");
+    formTag.action = "https://formspree.io/f/xgvrwbjv";
+    formTag.method = "POST";
     const labelName = document.createElement("label");
     labelName.htmlFor = "name";
     labelName.textContent = "Name:";
@@ -25,6 +27,7 @@ export function renderContact() {
     const emailInput = document.createElement("input");
     emailInput.type = "email";
     emailInput.id = "email";
+    emailInput.name = "email";
     emailInput.required = true;
     formTag.appendChild(emailLabel);
     formTag.appendChild(emailInput);
@@ -32,6 +35,7 @@ export function renderContact() {
     messageLabel.htmlFor = "message";
     messageLabel.textContent = "Your message";
     const messageTextArea = document.createElement("textarea");
+    messageTextArea.name = "message";
     messageTextArea.setAttribute("rows", "4");
     messageTextArea.setAttribute("cols", "50");
     messageTextArea.required = true;

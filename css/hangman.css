@@ -3,7 +3,10 @@
 
 *{
     color:rgb(255, 255, 255);
-}
+
+  }
+
+
 body{
     font-family: "TASA Orbiter", sans-serif;
     margin: 0;
@@ -14,6 +17,7 @@ body{
     background-size: cover;    
   }
 
+  
 nav {
   padding: 15px;
   background-color: rgb(0, 0, 0);
@@ -30,8 +34,64 @@ nav {
    border:3px solid rgb(255, 255, 255);
 }
 
+  
 main{
   text-align: center;
+}
+
+
+
+#introText{
+  display: inline-flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#introText h1 {
+  
+    padding:35px 35px 20px 35px;
+    position: relative; 
+    pointer-events: auto;
+}
+
+#cursor{
+  position: absolute;
+  width: 90px;
+  height: 70px;
+  border-radius: 50%;
+  pointer-events: none;
+  backdrop-filter: blur(2px) hue-rotate(320deg) saturate(9) contrast(25) brightness(0.7);  display: none; 
+    mask-image: radial-gradient(circle, black 40%, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle, black 40%, transparent 70%);
+}
+
+
+
+.letters{
+  padding-top: 5px;
+  font-size: 32px;
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  justify-content: center;
+  gap: 8px;
+}
+
+
+
+.letters span{
+  width: 1.4em; 
+  height: 1.4em;
+}
+
+.letters span:hover{
+  cursor: pointer;
+}
+
+.disabled{
+  text-decoration: line-through;
 }
 
 

@@ -1,4 +1,7 @@
 export function renderAbout() {
+    const links = ["https://www.kau.se/utbildning/program-och-kurser/kurser/ISGA11", "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGB11", "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGB15", "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGB13", "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGB17",
+        "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGB01", "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGB33", "https://www.kau.se/utbildning/program-och-kurser/kurser/DVGB07", "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGC12", "https://www.kau.se/utbildning/program-och-kurser/kurser/ISGC08"
+    ];
     const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = "";
     const h1 = document.createElement("h1");
@@ -14,10 +17,11 @@ export function renderAbout() {
     courseDiv.classList.add("courses");
     const ulTag = document.createElement("ul");
     for (let i = 0; i < 10; i++) {
+        let id = links[i].slice(-6);
         const liTag = document.createElement("li");
         const aTag = document.createElement("a");
-        aTag.href = "";
-        aTag.textContent = "Course " + i;
+        aTag.href = links[i];
+        aTag.textContent = id;
         liTag.appendChild(aTag);
         ulTag.appendChild(liTag);
     }

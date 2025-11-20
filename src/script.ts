@@ -5,7 +5,7 @@ import {renderContact} from "./generateContact.js";
 document.addEventListener("DOMContentLoaded", function(){
     const links = document.querySelectorAll<HTMLAnchorElement>(".navLinks");
     links.forEach(link => link.addEventListener("click", clickLink));
-    
+    generateContent("home");
 });
 
 
