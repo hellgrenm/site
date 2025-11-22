@@ -125,3 +125,10 @@ textarea {
   transform: translate(0, 0);
   border-bottom: 2px solid rgb(50, 50, 50);
 }
+
+
+@media only screen and (max-width: 600px) {
+  .pictureDiv {
+    flex-direction: column;
+  }
+}
